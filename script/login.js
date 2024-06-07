@@ -12,9 +12,8 @@ const validarInput = ({ target }) => {
 
 const subHandle = (event) => {
     event.preventDefault();
-
     localStorage.setItem('player', input.value);
 }
 
 input.addEventListener('input', validarInput);
-input.addEventListener('submit', subHandle);
+form.addEventListener('submit', subHandle);
