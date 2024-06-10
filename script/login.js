@@ -13,6 +13,7 @@ const validarInput = ({ target }) => {
 const subHandle = (event) => {
     event.preventDefault();
     localStorage.setItem('player', input.value);
+    window.location = 'pages/jogo.html'
 }
 
 input.addEventListener('input', validarInput);
